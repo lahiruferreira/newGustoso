@@ -28,8 +28,6 @@
             android:title="CONTACT US"
             android:icon="@drawable/ic_call_black_24dp"/>
 
-        <item android:id="@+id/nav_location"
-            android:title="LOCATION"
-            android:icon="@drawable/ic_location_on_black_24dp"/>
+
     </group>
 </menu>

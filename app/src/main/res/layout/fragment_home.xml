@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/toolbarimg1"/>
+
+        <EditText
+            android:id="@+id/hintquestion"
+            android:layout_width="300dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
+            android:hint="Enter Food Name ..."
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="60dp"/>
+
+        <ImageButton
+            android:id="@+id/search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_search_black_24dp"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/newArrival"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/newarrival"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imgArrival"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/gallery2"/>
+
+        <TextView
+            android:id="@+id/favourites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/favourtites"
+            android:layout_marginTop="560dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#000000"/>
+
+        <ImageView
+            android:id="@+id/imgFavourite"
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="590dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/favourite"/>
+
+        <ImageView
+            android:id="@+id/favoimg"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:background="@drawable/imgblack"
+            android:layout_marginTop="800dp"/>
+
+        <ImageView
+            android:id="@+id/web"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/web"
+            android:layout_marginTop="830dp"
+            android:layout_marginLeft="100dp"/>
+
+
+
+        <TextView
+            android:id="@+id/weblink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="835dp"
+            android:layout_marginLeft="130dp"
+            android:textSize="5pt"
+            android:text="http://www.gustoso.com"/>
+
+        <TextView
+            android:id="@+id/instalink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="865dp"
+            android:layout_marginLeft="130dp"
+            android:textSize="5pt"
+            android:text="http://www.instagram.com/gustoso"/>
+
+        <TextView
+            android:id="@+id/fblink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="895dp"
+            android:textSize="5pt"
+            android:layout_marginLeft="130dp"
+            android:text="http://www.facebook.com/gustoso"/>
+
+        <Button
+            android:id="@+id/reviewus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review-us"
+            android:textColor="#000000"
+            android:layout_marginTop="850dp"/>
+    </RelativeLayout>
+
+
+</ScrollView>

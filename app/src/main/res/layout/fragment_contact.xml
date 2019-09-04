@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/home_toobar"
+            layout="@layout/toolcontact"/>
+
+        <ImageView
+            android:id="@+id/person"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_person_black_24dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/name"
+            android:layout_marginLeft="55dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="210dp"/>
+
+        <EditText
+            android:id="@+id/hintname"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
+            android:layout_marginTop="211dp"
+            android:layout_marginLeft="180dp"/>
+
+
+        <ImageView
+            android:id="@+id/phone"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_call_black_24dp"
+            android:layout_marginTop="255dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/txtphone"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/phone"
+            android:layout_marginLeft="55dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="255dp"/>
+
+        <EditText
+            android:id="@+id/hintphone"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
+            android:layout_marginTop="255dp"
+            android:layout_marginLeft="180dp"/>
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_email_black_24dp"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/txtemail"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/email"
+            android:layout_marginLeft="55dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="300dp"/>
+
+        <EditText
+            android:id="@+id/hintemail"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
+            android:layout_marginTop="301dp"
+            android:layout_marginLeft="180dp"/>
+
+        <ImageView
+            android:id="@+id/country"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_public_black_24dp"
+            android:layout_marginTop="345dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/txtcountry"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/country"
+            android:layout_marginLeft="55dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="345dp"/>
+
+        <EditText
+            android:id="@+id/hintcountry"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
+            android:layout_marginTop="345dp"
+            android:layout_marginLeft="180dp"/>
+
+        <ImageView
+            android:id="@+id/question"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_question_answer_black_24dp"
+            android:layout_marginTop="395dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:id="@+id/txtquestion"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/question"
+            android:layout_marginLeft="55dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="395dp"/>
+
+        <EditText
+            android:id="@+id/hintquestion"
+            android:layout_width="170dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
+            android:layout_marginTop="395dp"
+            android:layout_marginLeft="180dp"/>
+
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btns"
+            android:layout_marginTop="450dp"
+            android:layout_marginLeft="105dp"
+            android:text="@string/btncontact"
+            android:textColor="#FFFF"
+            android:onClick="addCont"/>
+
+        <TextView
+            android:id="@+id/footer1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/footer1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:textSize="5pt"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="500dp"/>
+
+        <TextView
+            android:id="@+id/footer2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/footer2"
+            android:layout_marginLeft="115dp"
+            android:textColor="#000000"
+            android:textSize="5pt"
+            android:textStyle="normal"
+            android:layout_marginTop="520dp"/>
+
+        <TextView
+            android:id="@+id/footer3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/footer3"
+            android:layout_marginLeft="125dp"
+            android:textColor="#000000"
+            android:textSize="5pt"
+            android:textStyle="normal"
+            android:layout_marginTop="540dp"/>
+        <TextView
+            android:id="@+id/footer4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/footer4"
+            android:layout_marginLeft="129dp"
+            android:textSize="5pt"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="560dp"/>
+    </RelativeLayout>
+
+</ScrollView>

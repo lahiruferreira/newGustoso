@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:title="HOME"
+            android:icon="@drawable/ic_home_black_24dp"/>
+
+        <item android:id="@+id/nav_menu"
+            android:title="MENU"
+            android:icon="@drawable/ic_restaurant_menu_black_24dp"/>
+
+        <item android:id="@+id/nav_promo"
+            android:title="PROMOTION"
+            android:icon="@drawable/ic_sentiment_very_satisfied_black_24dp"/>
+
+        <item android:id="@+id/nav_login"
+            android:title="PROFILE"
+            android:icon="@drawable/ic_person_black_24dp"/>
+
+        <item android:id="@+id/nav_reviews"
+            android:title="CUSTOMER REVIEWS"
+            android:icon="@drawable/ic_comment_black_24dp"/>
+
+        <item android:id="@+id/nav_contact"
+            android:title="CONTACT US"
+            android:icon="@drawable/ic_call_black_24dp"/>
+
+        <item android:id="@+id/nav_location"
+            android:title="LOCATION"
+            android:icon="@drawable/ic_location_on_black_24dp"/>
+    </group>
+</menu>

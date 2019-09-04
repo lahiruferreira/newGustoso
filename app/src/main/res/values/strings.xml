@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name"></string>
+
+    <string name="naviopen">Open Navigation Drawer</string>
+    <string name="naviclose">Close Navigation Drawer</string>
+    <string name="name">Full Name</string>
+    <string name="email">E-mail Address</string>
+    <string name="phone">Contact No</string>
+    <string name="country">Country</string>
+    <string name="question">Ask Your Question</string>
+    <string name="btncontact">SUBMIT</string>
+    <string name="footer1">Will Send You An E-mail Within Day</string>
+    <string name="footer2">Manager: Minindu Sudantha</string>
+    <string name="footer3">gustoso97@outlook.com</string>
+    <string name="footer4">gustoso97@gmail.com</string>
+    <string name="reviewrate">Review Rate</string>
+    <string name="review">Your Review</string>
+    <string name="username">User Name</string>
+    <string name="password">Password</string>
+    <string name="gender">Gender</string>
+    <string name="conpassword">Confirm Password</string>
+    <string name="btnconfirm">Confirm</string>
+    <string name="login">Log-in</string>
+    <string name="signup">Sign-up</string>
+    <string name="rate">Excellent,Super,Good,Bad,Poor</string>
+    <string name="backHome">To Home</string>
+    <string name="newarrival">- N E W A R R I V A L E S -</string>
+    <string name="favourtites">- F A V O U R I T E S -</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_signup">signup</string>
+</resources>

@@ -24,6 +24,10 @@
     <string name="signup">Sign-up</string>
     <string name="rate">Excellent,Super,Good,Bad,Poor</string>
     <string name="backHome">To Home</string>
+    <string name="cusName">Lahiru Ferreira</string>
+    <string name="cusReview">The food was amazing. love to come next time</string>
+    <string name="cusRate">Superb</string>
+    <string name="cusCountry">Sri Lanka</string>
     <string name="newarrival">- N E W A R R I V A L E S -</string>
     <string name="favourtites">- F A V O U R I T E S -</string>
     <string name="title_activity_login">Login</string>

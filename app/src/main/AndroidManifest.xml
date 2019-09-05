@@ -33,6 +33,8 @@
 
         </activity>
         <activity android:name=".signup"></activity>
+
+        <activity android:name=".admin_dashboard"></activity>
     </application>
 
 </manifest>

@@ -1,10 +1,14 @@
 package com.example.administrator.gustoso;
 
+import android.database.Cursor;
+
 /**
  * Created by Administrator on 9/1/2019.
  */
 
 public class GustosoDB {
+
+
     public static abstract class userReview
     {
         public static final String FULL_NAME = "fullName";

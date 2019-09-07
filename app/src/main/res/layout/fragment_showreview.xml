@@ -8,7 +8,8 @@
         android:text="@string/cusName"
         android:textSize="20dp"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="8dp"/>
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textView3" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -16,7 +17,8 @@
         android:text="@string/cusCountry"
         android:textSize="20dp"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="8dp"/>
+        android:layout_marginLeft="8dp"
+        android:id="@+id/textView4" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -25,7 +27,8 @@
         android:layout_marginTop="70dp"
         android:layout_marginLeft="8dp"
         android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:id="@+id/textView2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,7 +37,29 @@
         android:layout_marginTop="110dp"
         android:layout_marginLeft="15dp"
         android:textSize="23dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:id="@+id/textView" />
+    <Button
+        android:id="@+id/listReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textView"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:text="View" />
+
+    <ListView
+        android:id="@+id/reviewList1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="36dp" />
+
 
 
 </RelativeLayout>

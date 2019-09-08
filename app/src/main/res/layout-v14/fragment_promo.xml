@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="284dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="PROMOTIONS"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="10pt"
+            android:textAlignment="center"
+            android:textStyle="bold" />
+
+     <TextView
+            android:id="@+id/fridetxt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Fride Rice"
+            android:textColor="@android:color/background_dark"
+            android:textSize="8pt"
+            android:layout_marginLeft="8dp"
+            android:textAlignment="center"
+            android:layout_marginTop="45dp"
+            android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/imgfried"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/imgfried"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="8dp"/>
+
+     <Button
+            android:id="@+id/btnfriedrice"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text="GO 8%"
+            android:background="@drawable/btns"
+            android:textAlignment="center"
+            android:layout_marginLeft="8dp"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+
+
+    <TextView
+        android:id="@+id/koththutxt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="200dp"
+        android:text="Koththu"
+        android:layout_marginRight="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="8pt"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/koththu"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/koththu"
+        android:layout_marginTop="85dp"
+        android:layout_marginLeft="200dp"/>
+
+
+     <Button
+            android:id="@+id/btnkottu"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250dp"
+            android:text=" GO 10%"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="200dp"
+            android:textAlignment="center"
+            android:textColor="#FFFF"
+            android:background="@drawable/btns"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/beveragestxt"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="310dp"
+            android:text="Beverages"
+            android:textColor="@android:color/background_dark"
+            android:textSize="8pt"
+            android:layout_marginRight="8dp"
+            android:textAlignment="center"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imgbeverage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/beverage"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="8dp"/>
+
+        <Button
+            android:id="@+id/btnbeverage"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="520dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/btns"
+            android:text="GO 5%"
+            android:textColor="#FFFF"
+            android:textSize="24sp"
+            android:layout_marginBottom="8dp"/>
+
+
+    <TextView
+        android:id="@+id/noodlestxt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Noodles"
+        android:layout_marginLeft="200dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="8pt"
+        android:layout_marginTop="310dp"
+        android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imgnoodles"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/noodles"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="200dp"/>
+
+   <Button
+        android:id="@+id/btnnoodle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="520dp"
+        android:layout_marginLeft="200dp"
+        android:text=" GO 11%"
+        android:layout_marginRight="8dp"
+        android:textColor="#FFFF"
+        android:background="@drawable/btns"
+        android:textSize="24sp"
+       android:layout_marginBottom="8dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>

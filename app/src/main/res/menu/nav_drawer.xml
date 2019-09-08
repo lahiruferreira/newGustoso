@@ -20,6 +20,10 @@
             android:title="PROFILE"
             android:icon="@drawable/ic_person_black_24dp"/>
 
+        <item android:id="@+id/nav_orders"
+            android:title="ORDERS"
+            android:icon="@drawable/ic_local_pizza_black_24dp"/>
+
         <item android:id="@+id/nav_reviews"
             android:title="CUSTOMER REVIEWS"
             android:icon="@drawable/ic_comment_black_24dp"/>

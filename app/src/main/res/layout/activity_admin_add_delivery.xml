@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_add_delivery">
+
+    <Button
+        android:id="@+id/admin_diliadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:background="@color/admin_diliadd"
+        android:text="@string/admin_diliadd"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt6.2" />
+
+    <TextView
+        android:id="@+id/admin_delivery_txt4"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/admin_delivery_txt4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt3" />
+
+    <EditText
+        android:id="@+id/admin_delivery_txt5.2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/admin_delivery_txt5.2"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt5"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt4.2" />
+
+    <TextView
+        android:id="@+id/admin_delivery_txt5"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/admin_delivery_txt5"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt4" />
+
+    <EditText
+        android:id="@+id/admin_delivery_txt4.2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/admin_delivery_txt4.2"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt4"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt3.2" />
+
+    <TextView
+        android:id="@+id/admin_delivery_txt6"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/admin_delivery_txt6"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt5" />
+
+    <EditText
+        android:id="@+id/admin_delivery_txt6.2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/admin_delivery_txt6.2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt6"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt5.2" />
+
+    <TextView
+        android:id="@+id/admin_delivery_txt3"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/admin_delivery_txt3"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt2" />
+
+    <EditText
+        android:id="@+id/admin_delivery_txt3.2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/admin_delivery_txt3.2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt2.2" />
+
+    <TextView
+        android:id="@+id/admin_delivery_txt2"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/admin_delivery_txt2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt1" />
+
+    <EditText
+        android:id="@+id/admin_delivery_txt2.2"
+        android:layout_width="195dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/admin_delivery_txt2.2"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt1" />
+
+    <TextView
+        android:id="@+id/admin_delivery_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/admin_delivery_txt1"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_img" />
+
+    <ImageView
+        android:id="@+id/admin_delivery_img"
+        android:layout_width="120dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginLeft="131dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/deliveryview" />
+
+    <Button
+        android:id="@+id/admin_diliback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/admin_diliback"
+        android:text="@string/admin_diliback"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt6" />
+
+
+</android.support.constraint.ConstraintLayout>

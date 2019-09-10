@@ -3,6 +3,9 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@android:color/holo_green_dark">
 
-
-
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="220dp"
+        android:layout_height="161dp"
+        android:text="TextView" />
 </RelativeLayout>

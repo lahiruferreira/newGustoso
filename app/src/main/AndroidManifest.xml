@@ -9,10 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< Updated upstream
         <activity android:name=".admin_add_employee"></activity>
         <activity android:name=".admin_view_food" />
         <activity android:name=".admin_view_delivery" />
         <activity android:name=".admin_add_delivery" />
+=======
+        <activity android:name=".FriedRice"></activity>
+>>>>>>> Stashed changes
         <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -30,7 +34,11 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Login"
+<<<<<<< Updated upstream
             android:theme="@style/AppTheme.NoActionBar" />
+=======
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> Stashed changes
         <activity android:name=".signup" />
         <activity android:name=".admin_dashboard" />
     </application>

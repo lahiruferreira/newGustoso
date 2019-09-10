@@ -67,4 +67,7 @@
     <string name="admin_btn5">Add customer</string>
     <string name="admin_btn6">View Customer</string>
     <string name="admin_food_txt1">Viwe Food Details</string>
+    <string name="admin_view_dili_txt1">View Delivery Details</string>
+    <string name="order_submit">SUBMIT</string>
+    <string name="order_txt8">Total Price :</string>
 </resources>

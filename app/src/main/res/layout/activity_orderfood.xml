@@ -4,9 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/scrollView2">
-
-
+    tools:context=".Orderfood">
     <ImageView
         android:id="@+id/order_img"
         android:layout_width="50dp"
@@ -41,14 +39,11 @@
         android:id="@+id/imageView11"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@drawable/ic_restaurant_menu_black_24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/order_txt"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_conversion_absoluteHeight="50dp"
         tools:layout_conversion_absoluteWidth="50dp" />
@@ -114,10 +109,11 @@
             tools:layout_editor_absoluteY="358dp" />
 
         <TextView
-            android:id="@+id/order_display_result"
+            android:id="@+id/order_display_results"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/holo_blue_bright" />
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp" />
     </LinearLayout>
 
 
@@ -230,7 +226,7 @@
         app:layout_constraintTop_toBottomOf="@+id/order_checkBox2" />
 
     <TextView
-        android:id="@+id/order_txt13"
+        android:id="@+id/order_txt6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="27dp"
@@ -249,12 +245,38 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="53dp"
         android:layout_marginLeft="53dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="39dp"
         android:text="@string/order_switch1"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/order_txt13"
+        app:layout_constraintStart_toEndOf="@+id/order_txt6"
         app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
 
+    <Button
+        android:id="@+id/order_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/order_submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_switch1" />
+
+    <TextView
+        android:id="@+id/order_txt8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/order_txt8"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_txt6" />
 
 </android.support.constraint.ConstraintLayout>

@@ -7,10 +7,16 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Orderfood extends AppCompatActivity {
+   order_new orders;
+   TextView total;
+   double total_price;
+
     Spinner order_sp;
 
     TextView display_data;
@@ -72,6 +78,9 @@ public class Orderfood extends AppCompatActivity {
             }
         });
 
+        orders = new order_new();
+        total = findViewById(R.id.order_txt8);
+
     }
 
     public void displayResult(View view){
@@ -92,5 +101,58 @@ public class Orderfood extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public void radioClick(View view) {
+        boolean checked = ((RadioButton) view).isChecked();
+        switch (view.getId()){
+            case R.id.order_radioButton:
+                if (checked)
+                    orders.setOrder_size_price(100);
+                break;
+
+            case R.id.order_radioButton2:
+                if (checked)
+                    orders.setOrder_size_price(200);
+                break;
+
+            case R.id.order_radioButton3:
+                if (checked)
+                    orders.setOrder_size_price(300);
+                break;
+        }
+        total.setText("Total Price : RS."+String.format("%.02f",orders.getOrder_size_price()));
+
+    }
+
+    public void checkboxClick(View view) {
+
+        boolean checked = ((CheckBox) view).isChecked();
+        switch (view.getId()){
+            case R.id.order_checkBox:
+                if (checked)
+                    orders.setCooldrink_price(150);
+                else
+                    orders.setCooldrink_price(0);
+                break;
+            case R.id.order_checkBox2:
+                if (checked)
+                    orders.setSalad_price(200);
+                else
+                    orders.setSalad_price(0);
+                break;
+            case R.id.checkBox3:
+                if (checked)
+                    orders.setPudding_price(180);
+                else
+                    orders.setPudding_price(0);
+                break;
+        }
+        total.setText("Total Price : RS."+ String.format("%.2f",calculate_total()));
+
+    }
+    private double calculate_total(){
+        total_price = orders.getOrder_size_price()+orders.getCooldrink_price()+orders.getSalad_price()+orders.getPudding_price();
+        return total_price;
     }
 }

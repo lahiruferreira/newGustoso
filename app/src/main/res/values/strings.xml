@@ -70,6 +70,7 @@
     <string name="admin_view_dili_txt1">View Delivery Details</string>
     <string name="order_submit">SUBMIT</string>
     <string name="order_txt8">Total Price :</string>
+<<<<<<< Updated upstream
     <string name="admin_emp_txt1">Add New Employee</string>
     <string name="admin_emp_txt2">First Name</string>
     <string name="admin_emp_txt3">Last Name</string>
@@ -93,4 +94,14 @@
     <string name="admin_customer_txt6">NIC</string>
     <string name="admin_customer_txt9">NIC</string>
     <string name="admin_viewcus_txt">View Customer Details</string>
+=======
+    <string name="FriedRice_txt1">Fried Rice</string>
+    <string name="FriedRice_txt5">These are the regular prices!!</string>
+    <string name="FriedRice_btn4">+</string>
+    <string name="FriedRice_btn5">-</string>
+    <string name="FriedRice_txt7">Chicken Friedrice</string>
+    <string name="FriedRice_btn1">Rs.250.00</string>
+    <string name="FriedRice_txt10">Fish Friedrice</string>
+    <string name="FriedRice_btn3">Rs.200.00</string>
+>>>>>>> Stashed changes
 </resources>

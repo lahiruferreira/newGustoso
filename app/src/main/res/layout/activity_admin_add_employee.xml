@@ -63,8 +63,13 @@
         android:hint="@string/admin_emp_txt9"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< Updated upstream
         app:layout_constraintStart_toEndOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt8" />
+=======
+        app:layout_constraintStart_toEndOf="@+id/FriedRice_txt1"
+        app:layout_constraintTop_toBottomOf="@+id/editText15" />
+>>>>>>> Stashed changes
 
     <TextView
         android:id="@+id/admin_emp_txt5"

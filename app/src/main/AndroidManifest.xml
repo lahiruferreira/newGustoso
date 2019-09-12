@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Koththu"></activity>
+        <activity android:name=".Noodles"></activity>
+        <activity android:name=".Koththu" />
         <activity android:name=".admin_view_customer" />
         <activity android:name=".admin_add_customer" />
         <activity android:name=".Orderfood" />

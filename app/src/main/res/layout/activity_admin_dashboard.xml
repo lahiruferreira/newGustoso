@@ -1,144 +1,199 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.administrator.gustoso.admin_dashboard">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/admin_txt_welcome"
-            android:layout_width="378dp"
-            android:layout_height="30dp"
-            android:layout_centerHorizontal="true"
-            android:layout_marginLeft="85dp"
-            android:layout_marginTop="9dp"
-            android:text="@string/admin_txt_welcome"
-            android:textAllCaps="true"
-            android:textColor="@android:color/background_dark"
-            android:textSize="24sp"
-            android:textStyle="bold|italic" />
+    <TextView
+        android:id="@+id/admin_txt_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/admin_txt_welcome"
+        android:textAllCaps="true"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/admin_img2"
         android:layout_width="110dp"
         android:layout_height="90dp"
-        android:layout_marginTop="45dp"
-        android:layout_marginLeft="210dp"
-        android:background="@drawable/deliveryview" />
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/deliveryview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_img1"
+        app:layout_constraintTop_toBottomOf="@+id/admin_txt_welcome" />
 
-        <Button
-            android:id="@+id/admin_btn2"
-            android:layout_width="110dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="210dp"
-            android:layout_marginTop="140dp"
-            android:background="#FFEA00"
-            android:text="@string/admin_btn2"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/admin_btn2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FFEA00"
+        android:text="@string/admin_btn2"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_btn1"
+        app:layout_constraintTop_toBottomOf="@+id/admin_img2" />
 
     <ImageView
         android:id="@+id/admin_img4"
         android:layout_width="110dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="200dp"
-        android:layout_marginLeft="215dp"
-        android:background= "@drawable/food" />
+        android:layout_height="90dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/food"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_img3"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn2" />
 
-        <Button
-            android:id="@+id/admin_btn4"
-            android:layout_width="110dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="210dp"
-            android:layout_marginTop="310dp"
-            android:background="#FFEA00"
-            android:text="@string/admin_btn4"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/admin_btn4"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="#FFEA00"
+        android:text="@string/admin_btn4"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_btn3"
+        app:layout_constraintTop_toBottomOf="@+id/admin_img4" />
 
     <ImageView
         android:id="@+id/admin_img1"
         android:layout_width="110dp"
         android:layout_height="90dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="45dp"
-        android:background= "@drawable/delivery" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/delivery"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_txt_welcome" />
 
-        <Button
-            android:id="@+id/admin_btn1"
-            android:layout_width="100dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="140dp"
-            android:background="#FFEA00"
-            android:text="@string/admin_btn1"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/admin_btn1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#FFEA00"
+        android:text="@string/admin_btn1"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_img1" />
 
     <ImageView
         android:id="@+id/admin_img3"
         android:layout_width="110dp"
         android:layout_height="90dp"
-        android:layout_marginTop="205dp"
-        android:layout_marginLeft="25dp"
-        android:background= "@drawable/empone" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/empone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn1" />
 
-        <Button
-            android:id="@+id/admin_btn3"
-            android:layout_width="110dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="310dp"
-            android:background="#FFEA00"
-            android:text="@string/admin_btn3"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/admin_btn3"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#FFEA00"
+        android:text="@string/admin_btn3"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_img3" />
 
     <ImageView
         android:id="@+id/admin_img5"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="90dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="370dp"
-        android:background="@drawable/emptwo" />
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/emptwo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn3" />
 
-        <Button
-            android:id="@+id/admin_btn5"
-            android:layout_width="110dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="470dp"
-            android:background="#FFEA00"
-            android:text="@string/admin_btn5"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
+    <Button
+        android:id="@+id/admin_btn5"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#FFEA00"
+        android:text="@string/admin_btn5"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_img5" />
 
     <ImageView
         android:id="@+id/admin_img6"
         android:layout_width="110dp"
         android:layout_height="90dp"
-        android:layout_marginTop="375dp"
-        android:layout_marginLeft="210dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/empthree"
+        app:layout_constraintStart_toEndOf="@+id/admin_img5"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn4" />
+
+    <Button
+        android:id="@+id/admin_btn6"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:background="#FFEA00"
+        android:text="@string/admin_btn6"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/admin_btn5"
+        app:layout_constraintTop_toBottomOf="@+id/admin_img6" />
+
+    <Button
+        android:id="@+id/buttonextra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="299dp"
+        android:layout_marginLeft="299dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
-        android:background= "@drawable/empthree" />
+        android:layout_marginBottom="132dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_btn6" />
 
-        <Button
-            android:id="@+id/admin_btn6"
-            android:layout_width="120dp"
-            android:layout_height="25dp"
-            android:layout_marginLeft="205dp"
-            android:layout_marginTop="470dp"
-            android:background="#FFEA00"
-            android:text="@string/admin_btn6"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
 
-    </RelativeLayout>
-
-</ScrollView>
+</android.support.constraint.ConstraintLayout>

@@ -103,5 +103,15 @@
     <string name="FriedRice_btn1">Rs.250.00</string>
     <string name="FriedRice_txt10">Fish Friedrice</string>
     <string name="FriedRice_btn3">Rs.200.00</string>
->>>>>>> Stashed changes
+    <string name="FriedRice_txt11">These are the regular prices!</string>
+    <string name="FriedRice_txt12">Chicken Friedrice</string>
+    <string name="FriedRice_btn11">Rs.180.00</string>
+    <string name="FriedRice_btn12">+</string>
+    <string name="FriedRice_btn13">-</string>
+    <string name="FriedRice_txt13">Fish Friedrice</string>
+    <string name="FriedRice_btn14">Rs.150.00</string>
+    <string name="FriedRice_btn15">+</string>
+    <string name="FriedRice_btn16">+</string>
+    <string name="FriedRice_btn17">-</string>
+    >>>>>>> Stashed changes
 </resources>

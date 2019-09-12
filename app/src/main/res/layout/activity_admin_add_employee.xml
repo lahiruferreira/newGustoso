@@ -155,7 +155,7 @@
         android:hint="@string/admin_emp_txt8"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/FriedRice_txt12"
         app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt7" />
 
     <TextView

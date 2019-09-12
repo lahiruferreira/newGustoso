@@ -19,7 +19,7 @@
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt6.2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt62" />
 
     <TextView
         android:id="@+id/admin_delivery_txt4"
@@ -35,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt3" />
 
     <EditText
-        android:id="@+id/admin_delivery_txt5.2"
+        android:id="@+id/admin_delivery_txt52"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -44,11 +44,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_delivery_txt5.2"
+        android:hint="@string/admin_delivery_txt52"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt5"
-        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt4.2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt42" />
 
     <TextView
         android:id="@+id/admin_delivery_txt5"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt4" />
 
     <EditText
-        android:id="@+id/admin_delivery_txt4.2"
+        android:id="@+id/admin_delivery_txt42"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -73,11 +73,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_delivery_txt4.2"
+        android:hint="@string/admin_delivery_txt42"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt4"
-        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt3.2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt32" />
 
     <TextView
         android:id="@+id/admin_delivery_txt6"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt5" />
 
     <EditText
-        android:id="@+id/admin_delivery_txt6.2"
+        android:id="@+id/admin_delivery_txt62"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -102,11 +102,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_delivery_txt6.2"
+        android:hint="@string/admin_delivery_txt62"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt6"
-        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt5.2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt52" />
 
     <TextView
         android:id="@+id/admin_delivery_txt3"
@@ -122,7 +122,7 @@
         app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt2" />
 
     <EditText
-        android:id="@+id/admin_delivery_txt3.2"
+        android:id="@+id/admin_delivery_txt32"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -131,11 +131,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_delivery_txt3.2"
+        android:hint="@string/admin_delivery_txt32"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt2"
-        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt2.2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt22" />
 
     <TextView
         android:id="@+id/admin_delivery_txt2"
@@ -151,7 +151,7 @@
         app:layout_constraintTop_toBottomOf="@+id/admin_delivery_txt1" />
 
     <EditText
-        android:id="@+id/admin_delivery_txt2.2"
+        android:id="@+id/admin_delivery_txt22"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="11dp"
@@ -160,7 +160,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_delivery_txt2.2"
+        android:hint="@string/admin_delivery_txt22"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/admin_delivery_txt2"

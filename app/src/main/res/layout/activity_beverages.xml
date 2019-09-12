@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FriedRice">
+    tools:context=".Beverages">
 
     <TextView
         android:id="@+id/FriedRice_txt1"
@@ -493,5 +493,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.941" />
+
+
 
 </android.support.constraint.ConstraintLayout>

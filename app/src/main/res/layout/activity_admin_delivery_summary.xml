@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_delivery_summary">
+
+
+    <TextView
+        android:id="@+id/admin_delivery_summary_txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/admin_delivery_summary_txt1"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/admin_delivery_summary_progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt1" />
+
+    <TextView
+        android:id="@+id/admin_delivery_summary_txt2"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/admin_delivery_summary_txt2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/admin_delivery_summary_txt3" />
+
+    <TextView
+        android:id="@+id/admin_delivery_summary_txt4"
+        android:layout_width="77dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/admin_delivery_summary_txt4"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt2" />
+
+    <TextView
+        android:id="@+id/admin_delivery_summary_txt6"
+        android:layout_width="106dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/admin_delivery_summary_txt6"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt4" />
+
+    <EditText
+        android:id="@+id/admin_delivery_summary_txt3"
+        android:layout_width="219dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_summary_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_progressBar" />
+
+    <EditText
+        android:id="@+id/admin_delivery_summary_txt5"
+        android:layout_width="219dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginRight="57dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_summary_txt4"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt3" />
+
+    <EditText
+        android:id="@+id/admin_delivery_summary_txt7"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_summary_txt6"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt5" />
+
+    <EditText
+        android:id="@+id/admin_delivery_summary_txt8"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/admin_delivery_summary_txt7"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt5" />
+
+    <Button
+        android:id="@+id/admin_delivery_summary_btn1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="openCustomerList"
+        android:text="@string/admin_delivery_summary_btn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_txt6" />
+
+    <Button
+        android:id="@+id/admin_delivery_summary_btn2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="openCompleteDelivery"
+        android:text="@string/admin_delivery_summary_btn2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_btn1" />
+
+    <Button
+        android:id="@+id/admin_delivery_summary_btn3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="openOrderList"
+        android:text="@string/admin_delivery_summary_btn3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_btn2" />
+
+    <Button
+        android:id="@+id/admin_delivery_summary_btn4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="editDelivery"
+        android:text="@string/admin_delivery_summary_btn4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_delivery_summary_btn3" />
+</android.support.constraint.ConstraintLayout>

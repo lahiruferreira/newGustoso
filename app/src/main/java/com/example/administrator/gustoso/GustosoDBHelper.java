@@ -15,6 +15,14 @@ import java.util.List;
  */
 
 public class GustosoDBHelper extends SQLiteOpenHelper {
+    private static final String TAG = "GustosoDBHelper" ;
+    private static final String TABLE_NAME = "adddelivery_table" ;
+    private static final String COL1 = "ID" ;
+    private static final String COL2 = "name" ;
+    private static final String COL3 = "location" ;
+    private static final String COL4 = "date" ;
+    private static final String COL5 = "time" ;
+
 
     private static final String CREATE_QUERY1 = "CREATE TABLE "+ GustosoDB.userReview.TABLE_NAME+"("+ GustosoDB.userReview.FULL_NAME+" TEXT,"+
             GustosoDB.userReview.CONTACT_NO+" TEXT,"+ GustosoDB.userReview.EMAIL_ADDRESS+" TEXT,"+ GustosoDB.userReview.COUNTRY+" TEXT,"+
@@ -25,8 +33,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
             GustosoDB.userContact.QUESTION+" TEXT);";
 
     public GustosoDBHelper(Context context){
-        super(context,"GustosoDB",null,1);
-        Log.e("DB Operation","Database created/opened");
+        super(context, TABLE_NAME , null, 1);
+       /* super(context,"GustosoDB",null,1);
+        Log.e("DB Operation","Database created/opened");*/
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -35,6 +44,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
 
         db.execSQL(CREATE_QUERY2);
         Log.e("DB Operation","Table created");
+
+        String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT, " + COL4 + " TEXT, " + COL5 + " TEXT)" ;
+        db.execSQL(createTable) ;
     }
 
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){
@@ -61,7 +73,8 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     }*/
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-
+        db.execSQL("DROP TABLE " + TABLE_NAME) ;
+        onCreate(db);
     }
 
     public Cursor viewData(GustosoDBHelper gustosoDBHelper){
@@ -92,5 +105,52 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
                 selectionArgs
         );
     }
+    public boolean addData (String name, String location, String date, String time) {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        ContentValues contentValues = new ContentValues() ;
+        contentValues.put(COL2, name) ;
+        contentValues.put(COL3, location) ;
+        contentValues.put(COL4, date) ;
+        contentValues.put(COL5, time) ;
+
+        Log.d(TAG, "addData: Adding " + name + " to " + TABLE_NAME) ;
+        long result = db.insert(TABLE_NAME, null, contentValues) ;
+
+        if (result == -1 ){
+            return false ;
+        }else {
+            return true ;
+        }
+    }
+
+    public Cursor getData() {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        String query = "SELECT * FROM " + TABLE_NAME ;
+        Cursor data = db.rawQuery(query, null) ;
+        return data ;
+    }
+
+    public Cursor getItemId(String name) {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        String query = "SELECT * FROM " + TABLE_NAME + " WHERE " + COL2 + " = '"+name+"'" ;
+        Cursor data = db.rawQuery(query, null);
+        return data ;
+    }
+    public void updateName(String newName, int id, String oldName, String location, String date, String time){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "UPDATE " + TABLE_NAME + " SET " + COL2 + " = '"+ newName +"', "+ COL3 + " = '"+ location +"', "+ COL4 +" = '"+ date +"', "+ COL5 +" = '"+ time +"' WHERE " + COL1 + " = '"+ id +"'" + " AND " + COL2 + " = '"+ oldName +"'";
+        Log.d(TAG, "updateName: query: " + query) ;
+        Log.d(TAG, "updateName: Setting name to " + newName);
+        db.execSQL(query);
+    }
+    public void deleteName(int id, String name){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "DELETE FROM " + TABLE_NAME + " WHERE " + COL1 + " = '"+ id +"'" + " AND " + COL2 + " = '"+ name +"'" ;
+        Log.d(TAG, "deleteName: query: " + query);
+        Log.d(TAG, "deleteName: Deleting " + name + " from database.");
+        db.execSQL(query);
+
+    }
+
 
 }

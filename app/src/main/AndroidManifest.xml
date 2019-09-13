@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Beverages"></activity>
+        <activity android:name=".admin_view_complete_delivery"></activity>
+        <activity android:name=".admin_complete_delivery" />
+        <activity android:name=".admin_edit_delivery" />
+        <activity android:name=".admin_delivery_summary" />
+        <activity android:name=".Beverages" />
         <activity android:name=".Noodles" />
         <activity android:name=".Koththu" />
         <activity android:name=".admin_view_customer" />

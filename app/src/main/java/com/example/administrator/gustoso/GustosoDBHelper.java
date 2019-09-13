@@ -33,9 +33,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
             GustosoDB.userContact.QUESTION+" TEXT);";
 
     public GustosoDBHelper(Context context){
-        super(context, TABLE_NAME , null, 1);
-       /* super(context,"GustosoDB",null,1);
-        Log.e("DB Operation","Database created/opened");*/
+        /*super(context, TABLE_NAME , null, 1);*/
+        super(context,"GustosoDB",null,1);
+        Log.e("DB Operation","Database created/opened");
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
@@ -47,6 +47,7 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
 
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT, " + COL4 + " TEXT, " + COL5 + " TEXT)" ;
         db.execSQL(createTable) ;
+
     }
 
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){
@@ -75,6 +76,8 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("DROP TABLE " + TABLE_NAME) ;
         onCreate(db);
+
+
     }
 
     public Cursor viewData(GustosoDBHelper gustosoDBHelper){
@@ -136,6 +139,7 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         Cursor data = db.rawQuery(query, null);
         return data ;
     }
+
     public void updateName(String newName, int id, String oldName, String location, String date, String time){
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "UPDATE " + TABLE_NAME + " SET " + COL2 + " = '"+ newName +"', "+ COL3 + " = '"+ location +"', "+ COL4 +" = '"+ date +"', "+ COL5 +" = '"+ time +"' WHERE " + COL1 + " = '"+ id +"'" + " AND " + COL2 + " = '"+ oldName +"'";

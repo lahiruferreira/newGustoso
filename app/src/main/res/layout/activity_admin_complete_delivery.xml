@@ -105,6 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@color/admin_diliback"
+        android:onClick="@string/admin_delivery_summary_btn1"
         android:text="@string/admin_complete_delivery_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

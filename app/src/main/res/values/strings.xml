@@ -133,5 +133,13 @@
     <string name="admin_delivery_summary_btn3">Order List</string>
     <string name="admin_delivery_summary_btn4">Edit Delivery</string>
     <string name="admin_view_emp_txt1">View Employee Details</string>
+    <string name="admin_c_emp_txt1">Registered Employee</string>
+    <string name="admin_c_emp_txt2">Name</string>
+    <string name="admin_c_emp_txt3">Enter Employee Name</string>
+    <string name="admin_c_emp_txt4">Employee ID</string>
+    <string name="admin_c_emp_txt5">Enter Employee ID</string>
+    <string name="admin_c_emp_txt6">Position</string>
+    <string name="admin_c_emp_txt7">Enter Position</string>
+    <string name="admin_c_emp_btn">Submit</string>
 
 </resources>

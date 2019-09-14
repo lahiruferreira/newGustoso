@@ -4,71 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".admin_add_employee">
-
+    tools:context=".admin_edit_employee">
 
     <Button
-        android:id="@+id/admin_emp_add"
-        android:layout_width="0dp"
+        android:id="@+id/admin_empsave"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
         android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
         android:background="#FFEA00"
-        android:text="ADD"
-        android:textColor="@android:color/black"
+
+        android:text="@string/admin_empsave"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt12" />
+
+    <Button
+        android:id="@+id/admin_empdelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:background="#FFEA00"
+
+        android:text="@string/admin_empdelete"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt13" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt13" />
 
     <TextView
-        android:id="@+id/admin_emp_txt4"
+        android:id="@+id/admin_empedit_txt4"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/admin_emp_txt4"
+
+        android:text="@string/admin_empedit_txt4"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt3" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt3" />
 
     <EditText
-        android:id="@+id/admin_emp_txt9"
+        android:id="@+id/admin_empedit_txt9"
         android:layout_width="195dp"
         android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_emp_txt9"
+        android:hint="@string/admin_empedit_txt9"
         android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt8" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt8" />
 
 
     <TextView
-        android:id="@+id/admin_emp_txt5"
+        android:id="@+id/admin_empedit_txt5"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/admin_emp_txt5"
+
+        android:text="@string/admin_empedit_txt5"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt4" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt4" />
 
     <EditText
-        android:id="@+id/admin_emp_txt10"
+        android:id="@+id/admin_empedit_txt10"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -77,83 +88,84 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_emp_txt10"
+
+        android:hint="@string/admin_empedit_txt10"
         android:inputType="textEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt9" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt9" />
 
     <TextView
-        android:id="@+id/admin_emp_txt6"
+        android:id="@+id/admin_empedit_txt6"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/admin_emp_txt6"
+
+        android:text="@string/admin_empedit_txt6"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt5" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt5" />
 
     <EditText
-        android:id="@+id/admin_emp_txt11"
+        android:id="@+id/admin_empedit_txt11"
         android:layout_width="195dp"
         android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_emp_txt11"
+
+        android:hint="@string/admin_empedit_txt11"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt10" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt10" />
 
     <TextView
-        android:id="@+id/admin_emp_txt3"
+        android:id="@+id/admin_empedit_txt3"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/admin_emp_txt3"
+
+        android:text="@string/admin_empedit_txt3"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt2" />
 
     <EditText
-        android:id="@+id/admin_emp_txt8"
+        android:id="@+id/admin_empedit_txt8"
         android:layout_width="195dp"
         android:layout_height="40dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_emp_txt8"
+
+        android:hint="@string/admin_empedit_txt8"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt7" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt7" />
 
     <TextView
-        android:id="@+id/admin_emp_txt2"
+        android:id="@+id/admin_empedit_txt2"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
-        android:text="@string/admin_emp_txt2"
+        android:text="@string/admin_empedit_txt2"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt1" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt1" />
 
     <EditText
-        android:id="@+id/admin_emp_txt7"
+        android:id="@+id/admin_empedit_txt7"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="11dp"
@@ -162,28 +174,30 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_emp_txt7"
+
+        android:hint="@string/admin_empedit_txt7"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/admin_emp_txt2"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt1" />
+        app:layout_constraintStart_toEndOf="@+id/admin_empedit_txt2"
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt1" />
 
     <TextView
-        android:id="@+id/admin_emp_txt1"
+        android:id="@+id/admin_empedit_txt1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="75dp"
         android:layout_marginLeft="75dp"
         android:layout_marginTop="8dp"
-        android:text="@string/admin_emp_txt1"
+
+        android:text="@string/admin_empedit_txt1"
         android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_employee_img2" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_employeeedit_img2" />
 
     <ImageView
-        android:id="@+id/admin_employee_img2"
+        android:id="@+id/admin_employeeedit_img2"
         android:layout_width="120dp"
         android:layout_height="111dp"
         android:layout_marginStart="131dp"
@@ -194,20 +208,21 @@
         app:srcCompat="@drawable/empone" />
 
     <TextView
-        android:id="@+id/admin_emp_txt12"
+        android:id="@+id/admin_empedit_txt12"
         android:layout_width="170dp"
         android:layout_height="40dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
-        android:text="@string/admin_emp_txt12"
+
+        android:text="@string/admin_empedit_txt12"
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt6" />
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt6" />
 
     <EditText
-        android:id="@+id/admin_emp_txt13"
+        android:id="@+id/admin_empedit_txt13"
         android:layout_width="195dp"
         android:layout_height="40dp"
         android:layout_marginStart="8dp"
@@ -216,10 +231,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:ems="10"
-        android:hint="@string/admin_emp_txt13"
+
+        android:hint="@string/admin_empedit_txt13"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/admin_emp_txt12"
-        app:layout_constraintTop_toBottomOf="@+id/admin_emp_txt11" />
-
+        app:layout_constraintStart_toEndOf="@+id/admin_empedit_txt12"
+        app:layout_constraintTop_toBottomOf="@+id/admin_empedit_txt11" />
 </android.support.constraint.ConstraintLayout>

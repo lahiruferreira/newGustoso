@@ -154,5 +154,20 @@
     <string name="admin_s_emp_btn2">Registerd Employee</string>
     <string name="admin_s_emp_btn3">Admin Dash Board</string>
     <string name="admin_s_emp_btn4">Edit Employee</string>
+    <string name="admin_empedit_txt1">Edit Employee Details</string>
+    <string name="admin_empedit_txt2">First Name</string>
+    <string name="admin_empedit_txt3" >Last Name</string>
+    <string name="admin_empedit_txt4">Phone Number</string>
+    <string name="admin_empedit_txt5">E-mail</string>
+    <string name="admin_empedit_txt6">NIC</string>
+    <string name="admin_empedit_txt12">Date</string>
+    <string name="admin_empedit_txt7">First Name</string>
+    <string name="admin_empedit_txt8">Last Name</string>
+    <string name="admin_empedit_txt9">Phone Number</string>
+    <string name="admin_empedit_txt10">Email</string>
+    <string name="admin_empedit_txt11">NIC</string>
+    <string name="admin_empedit_txt13">DD/MM/YYYY</string>
+    <string name="admin_empsave">Save</string>
+    <string name="admin_empdelete">Delete</string>
 
 </resources>

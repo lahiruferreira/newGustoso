@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.gustoso.review">
+    tools:context=".review">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -140,7 +140,7 @@
             android:id="@+id/question"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/ic_question_answer_black_24dp"
+            android:background="@drawable/ic_star_black_24dp"
             android:layout_marginTop="415dp"
             android:layout_marginLeft="20dp"/>
 
@@ -148,39 +148,11 @@
             android:id="@+id/txtquestion"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:text="@string/review"
-            android:layout_marginLeft="55dp"
-            android:textColor="#000000"
-            android:textStyle="normal"
-            android:layout_marginTop="415dp"/>
-
-        <EditText
-            android:id="@+id/hintreview"
-            android:layout_width="220dp"
-            android:layout_height="20dp"
-            android:background="@drawable/edit_text"
-            android:paddingLeft="15dp"
-            android:textSize="6pt"
-            android:layout_marginTop="435dp"
-            android:layout_marginLeft="120dp"/>
-
-        <ImageView
-            android:id="@+id/rate"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:background="@drawable/ic_star_black_24dp"
-            android:layout_marginTop="465dp"
-            android:layout_marginLeft="20dp"/>
-
-        <TextView
-            android:id="@+id/txtrate"
-            android:layout_width="wrap_content"
-            android:layout_height="20dp"
             android:text="@string/reviewrate"
             android:layout_marginLeft="55dp"
             android:textColor="#000000"
             android:textStyle="normal"
-            android:layout_marginTop="465dp"/>
+            android:layout_marginTop="415dp"/>
 
         <EditText
             android:id="@+id/hintrate"
@@ -189,8 +161,36 @@
             android:background="@drawable/edit_text"
             android:paddingLeft="15dp"
             android:textSize="6pt"
+            android:layout_marginTop="435dp"
+            android:layout_marginLeft="120dp"
+            android:hint="@string/rate"/>
+
+        <ImageView
+            android:id="@+id/rate"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_question_answer_black_24dp"
+            android:layout_marginTop="465dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/txtrate"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/review"
+            android:layout_marginLeft="55dp"
+            android:textColor="#000000"
+            android:textStyle="normal"
+            android:layout_marginTop="465dp"/>
+
+        <EditText
+            android:id="@+id/hintreview"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:background="@drawable/edit_text"
+            android:paddingLeft="15dp"
+            android:textSize="6pt"
             android:layout_marginTop="485dp"
-            android:hint="@string/rate"
             android:layout_marginLeft="120dp"/>
 
 
@@ -203,21 +203,7 @@
             android:layout_marginLeft="105dp"
             android:layout_marginBottom="8dp"
             android:text="@string/btnconfirm"
-            android:textColor="#FFFF"
-            android:onClick="addDetails"/>
-
-
-        <Button
-            android:id="@+id/btnview"
-            android:layout_width="150dp"
-            android:layout_height="30dp"
-            android:background="@drawable/btns"
-            android:layout_marginTop="520dp"
-            android:layout_marginLeft="105dp"
-            android:layout_marginBottom="8dp"
-            android:text="View"
-            android:textColor="#FFFF"
-            android:onClick="ViewData"/>
+            android:textColor="#FFFF" />
 
 
     </RelativeLayout>

@@ -11,26 +11,112 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.regex.Pattern;
+
 public class review extends AppCompatActivity {
-        private Button btn;
+        /*private Button btn;
         Context context = this;
         GustosoDBHelper gustosoDBHelper;
         SQLiteDatabase sqLiteDatabase;
         EditText Name,Contact,Email,Country,Review,Rate;
-        String name,contact,email,country,review,rate;
+        String name,contact,email,country,review,rate;*/
+
+    GustosoDBHelper1 gustosoDBHelper;
+    private Button btnConfirm;
+    private EditText hintname;
+    private EditText hintphone;
+    private EditText hintemail;
+    private EditText hintcountry;
+    private EditText hintrate;
+    private EditText hintreview;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.review);
 
+        btnConfirm = (Button) findViewById(R.id.btnconfirm);
+        hintname = (EditText) findViewById(R.id.hintname);
+        hintphone = (EditText) findViewById(R.id.hintphone);
+        hintemail = (EditText) findViewById(R.id.hintemail);
+        hintcountry = (EditText) findViewById(R.id.hintcountry);
+        hintrate = (EditText) findViewById(R.id.hintrate);
+        hintreview = (EditText) findViewById(R.id.hintreview);
+        gustosoDBHelper = new GustosoDBHelper1(this);
+
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fullname = hintname.getText().toString();
+                String phone = hintphone.getText().toString();
+                String email = hintemail.getText().toString();
+                String country = hintcountry.getText().toString();
+                String rate = hintrate.getText().toString();
+                String review = hintreview.getText().toString();
+
+                if (validateDetails()) {
+                    addReview(fullname, phone, email, country, rate, review);
+                    hintname.setText("");
+                    Intent mainScreen = new Intent(review.this, viewreview.class);
+                    startActivity(mainScreen);
+                } else {
+                    //toastMessage("Invalid Name");
+                }
+            }
+        });
+    }
+
+    public boolean validateDetails() {
+        if (hintname.length() == 0) {
+            Toast.makeText(this, "Invalid name", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (hintphone.length() < 10 || hintphone.length() > 10 || hintphone.length() == 0) {
+            Toast.makeText(this, "Incorrect Contact Number", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (hintemail.length() == 0) {
+            Toast.makeText(this, "Invalid Email", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (hintcountry.length() == 0) {
+            Toast.makeText(this, "Country is blank", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (hintrate.length() == 0) {
+            Toast.makeText(this, "Rate is blank", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        if (hintreview.length() == 0) {
+            Toast.makeText(this, "Review is blank", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        return true;
+    }
+
+    public void addReview(String fullname, String contact, String email, String country, String rate, String review) {
+        boolean insertData = gustosoDBHelper.addReview(fullname, contact, email, country, rate, review);
+
+        if (insertData) {
+            Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "Fail", Toast.LENGTH_SHORT).show();
+        }
+
+    }
+}
 
 
-       Name = (EditText) findViewById(R.id.hintname);
+
+
+
+
+      /* Name = (EditText) findViewById(R.id.hintname);
         Contact = (EditText) findViewById(R.id.hintphone);
         Email = (EditText) findViewById(R.id.hintemail);
         Country = (EditText) findViewById(R.id.hintcountry);
         Review = (EditText) findViewById(R.id.hintreview);
-        Rate = (EditText) findViewById(R.id.hintrate);
+        Rate = (EditText) findViewById(R.id.hintrate);*/
 
     /*  btn = findViewById(R.id.btnback);
      btn.setOnClickListener(new View.OnClickListener() {
@@ -43,9 +129,9 @@ public class review extends AppCompatActivity {
             }
         });*/
 
-    }
 
-   public void addDetails(View view){
+
+   /*public void addDetails(View view){
 
         String name = Name.getText().toString();
         String cont = Contact.getText().toString();
@@ -58,7 +144,7 @@ public class review extends AppCompatActivity {
         gustosoDBHelper.addInfor(name,cont,email,country,review,rate,sqLiteDatabase);
         Toast.makeText(getBaseContext(),"Succesfull",Toast.LENGTH_LONG).show();
         gustosoDBHelper.close();
-    }
+    }*/
 
    /* public void ViewData(View view){
         String name = Name.getText().toString();
@@ -93,4 +179,3 @@ public class review extends AppCompatActivity {
             finish();
         }
     }*/
-}

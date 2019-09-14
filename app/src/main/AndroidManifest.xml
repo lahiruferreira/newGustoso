@@ -9,9 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+<<<<<<< HEAD
         <activity android:name=".final_review"></activity>
         <activity android:name=".viewreview" />
         <activity android:name=".review_summary" />
+=======
+        <activity android:name=".admin_edit_employee"></activity>
+        <activity android:name=".admin_view_complete_employee" />
+        <activity android:name=".admin_summary_of_employee" />
+        <activity android:name=".admin_complete_employee" />
+        <activity android:name=".admin_view_employee" />
+>>>>>>> origin/master
         <activity android:name=".admin_view_complete_delivery" />
         <activity android:name=".admin_complete_delivery" />
         <activity android:name=".admin_edit_delivery" />

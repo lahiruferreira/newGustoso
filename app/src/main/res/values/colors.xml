@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#696969</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#000000</color>
-    <color name="admin_diliback">#FFEA00</color>
-    <color name="admin_diliadd">#FFEA00</color>
+    <color name="colorAccent">#442D2D</color>
+    <color name="admin_diliback">#676331</color>
+    <color name="admin_diliadd">#A2FF00</color>
 </resources>

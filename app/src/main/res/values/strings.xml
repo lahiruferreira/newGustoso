@@ -141,5 +141,18 @@
     <string name="admin_c_emp_txt6">Position</string>
     <string name="admin_c_emp_txt7">Enter Position</string>
     <string name="admin_c_emp_btn">Submit</string>
+    <string name="admin_s_emp_txt1">Registerd Employee Summary</string>
+    <string name="admin_emp_txt12">Date</string>
+    <string name="admin_emp_txt13">DD/MM/YYYY</string>
+    <string name="admin_s_emp_txt2">First Name</string>
+    <string name="admin_s_emp_txt4">Last Name</string>
+    <string name="admin_s_emp_txt6">Phone Number</string>
+    <string name="admin_s_emp_txt8">E-Mail</string>
+    <string name="admin_s_emp_txt10">NIC</string>
+    <string name="admin_s_emp_txt12">Date</string>
+    <string name="admin_s_emp_btn1">Delivery List</string>
+    <string name="admin_s_emp_btn2">Registerd Employee</string>
+    <string name="admin_s_emp_btn3">Admin Dash Board</string>
+    <string name="admin_s_emp_btn4">Edit Employee</string>
 
 </resources>

@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Beverages"></activity>
+        <activity android:name=".FriedRiceList"></activity>
+        <activity android:name=".FriedRice2" />
+        <activity android:name=".FriedRice1" />
+        <activity android:name=".Beverages" />
         <activity android:name=".Noodles" />
         <activity android:name=".Koththu" />
         <activity android:name=".admin_view_customer" />

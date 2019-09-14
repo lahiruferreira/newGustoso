@@ -110,4 +110,17 @@
     <string name="FriedRice_btn15">+</string>
     <string name="FriedRice_btn16">+</string>
     <string name="FriedRice_btn17">-</string>
+    <string name="FriedRice_btn20">Chicken Friedrice</string>
+    <string name="FriedRice_btn21" translatable="false">Mixed Friedrice</string>
+    <string name="FriedRice1_txt1" />
+    <string name="FriedRiceList_txt1" translatable="false">Fried Rice</string>
+    <string name="FriedRiceList_btn1">Chicken Friedrice</string>
+    <string name="FriedRiceList_btn2">Mixed Friedrice</string>
+    <string name="food_description1">Fried Rice</string>
+    <string name="FoodDetails_txt1">Food Details</string>
+    <string name="FoodDetails_btn1">Fried Rice</string>
+    <string name="FoodDetails_btn2">Koththu</string>
+    <string name="FoodDetails_btn3">Beverages</string>
+    <string name="FoodDetails_btn4">Back</string>
+    <string name="FriedRiceList_btn3">Back</string>
 </resources>

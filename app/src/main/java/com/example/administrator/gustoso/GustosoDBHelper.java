@@ -36,9 +36,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_QUERY2);
         Log.e("DB Operation","Table created");
     }
-
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){
         ContentValues contentValues = new ContentValues();
+
         contentValues.put(GustosoDB.userReview.FULL_NAME,fullname);
         contentValues.put(GustosoDB.userReview.CONTACT_NO,contact);
         contentValues.put(GustosoDB.userReview.EMAIL_ADDRESS,email);

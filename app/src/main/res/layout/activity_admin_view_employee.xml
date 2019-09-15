@@ -50,6 +50,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginRight="48dp"
         android:clickable="true"
+        android:onClick="createEmp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/admin_view_emp_list"
         app:srcCompat="@android:drawable/ic_input_add" />

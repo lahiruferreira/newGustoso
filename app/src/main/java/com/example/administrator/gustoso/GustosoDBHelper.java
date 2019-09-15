@@ -56,7 +56,7 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT, " + COL4 + " TEXT, " + COL5 + " TEXT)" ;
         db.execSQL(createTable) ;
 
-        String tableCreate = "CREATE TABLE " + EMP_TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COLOUMN2 + " TEXT, " + COLOUMN3 + " TEXT, " + COLOUMN4 + " TEXT, " + COLOUMN5 + " TEXT, " + COLOUMN6 + " TEXT, " + COLOUMN7 + " TEXT )" ;
+        String tableCreate = "CREATE TABLE " + EMP_TABLE_NAME + " (EID INTEGER PRIMARY KEY AUTOINCREMENT, " + COLOUMN2 + " TEXT, " + COLOUMN3 + " TEXT, " + COLOUMN4 + " TEXT, " + COLOUMN5 + " TEXT, " + COLOUMN6 + " TEXT, " + COLOUMN7 + " TEXT )" ;
         db.execSQL(tableCreate) ;
     }
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){

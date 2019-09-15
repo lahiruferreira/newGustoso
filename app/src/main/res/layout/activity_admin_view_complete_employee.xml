@@ -27,6 +27,7 @@
         android:layout_marginLeft="312dp"
         android:layout_marginTop="64dp"
         android:clickable="true"
+        android:onClick="createemp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/admin_vc_emp_listview"
         app:srcCompat="@android:drawable/ic_input_add" />

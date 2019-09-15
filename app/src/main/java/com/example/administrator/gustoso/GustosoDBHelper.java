@@ -23,6 +23,14 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     private static final String COL4 = "date" ;
     private static final String COL5 = "time" ;
 
+    private static final String EMP_TABLE_NAME = "employee_table" ;
+    private static final String COLOUMN1 = "EID" ;
+    private static final String COLOUMN2 = "fname" ;
+    private static final String COLOUMN3 = "lname" ;
+    private static final String COLOUMN4 = "pnum" ;
+    private static final String COLOUMN5 = "mail" ;
+    private static final String COLOUMN6 = "nic" ;
+    private static final String COLOUMN7 = "date" ;
 
    /* private static final String CREATE_QUERY1 = "CREATE TABLE "+ GustosoDB.userReview.TABLE_NAME+"("+ GustosoDB.userReview.FULL_NAME+" TEXT,"+
             GustosoDB.userReview.CONTACT_NO+" TEXT,"+ GustosoDB.userReview.EMAIL_ADDRESS+" TEXT,"+ GustosoDB.userReview.COUNTRY+" TEXT,"+
@@ -48,6 +56,8 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT, " + COL4 + " TEXT, " + COL5 + " TEXT)" ;
         db.execSQL(createTable) ;
 
+        String tableCreate = "CREATE TABLE " + EMP_TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COLOUMN2 + " TEXT, " + COLOUMN3 + " TEXT, " + COLOUMN4 + " TEXT, " + COLOUMN5 + " TEXT, " + COLOUMN6 + " TEXT, " + COLOUMN7 + " TEXT )" ;
+        db.execSQL(tableCreate) ;
     }
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){
         ContentValues contentValues = new ContentValues();
@@ -155,6 +165,50 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         db.execSQL(query);
 
     }
+    public boolean dataAdd (String enterNewEmp, String Lname, String Pnum, String Mail, String Nic, String Date) {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        ContentValues cval = new ContentValues() ;
+        cval.put(COLOUMN2, enterNewEmp) ;
+        cval.put(COLOUMN3, Lname) ;
+        cval.put(COLOUMN4, Pnum) ;
+        cval.put(COLOUMN5, Mail) ;
+        cval.put(COLOUMN6, Nic) ;
+        cval.put(COLOUMN7, Date) ;
 
+        Log.d(TAG, "DataAdd: Added " + enterNewEmp + " to " + EMP_TABLE_NAME) ;
+        long r = db.insert(EMP_TABLE_NAME, null, cval) ;
+
+        if (r == -1 ){
+            return false ;
+        }else {
+            return true ;
+        }
+    }
+    public Cursor gettingData() {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        String q = "SELECT * FROM " + EMP_TABLE_NAME ;
+        Cursor d = db.rawQuery(q, null) ;
+        return d ;
+    }
+    public Cursor getEmpId(String enterNewEmp) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String q = "SELECT * FROM " + EMP_TABLE_NAME + " WHERE " + COLOUMN2 + " = '" +enterNewEmp+"'" ;
+        Cursor d = db.rawQuery(q, null);
+        return d ;
+    }
+    public void Employeeupdate(String newfname, int eid, String oldfname, String Lname, String Pnum, String Mail, String Nic, String Date){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN1 + " = '" + oldfname + "'";
+        Log.d(TAG, "updateName: query: " + q) ;
+        Log.d(TAG, "updateName: Setting name to " +newfname);
+        db.execSQL(q);
+    }
+    public void NameDelete(int eid, String enterNewEmp){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String q = "DELETE FROM " + EMP_TABLE_NAME + " WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN2 + " = '" + enterNewEmp + "'" ;
+        Log.d(TAG, "deleteNeme: query: " + q);
+        Log.d(TAG, "deleteName: Deleting " + enterNewEmp + " from database. ");
+        db.execSQL(q);
+    }
 
 }

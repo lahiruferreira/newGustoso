@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".final_review">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/admin_delivery_summary_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Update Delete Review"
+            android:gravity="center|top"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/finalname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:layout_marginTop="100dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/finalcustomername"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/finalcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/country"
+            android:layout_marginTop="150dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/finalcustomercountry"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/finalrate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/reviewrate"
+            android:layout_marginTop="200dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/finalcustomerrate"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/finalreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/review"
+            android:layout_marginTop="250dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/finalcustomerreview"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="100dp"/>
+
+        <Button
+            android:id="@+id/updateReview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:background="@drawable/btns"
+            android:textColor="#FFFF"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="350dp" />
+
+        <Button
+            android:id="@+id/deleteReview"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:background="@drawable/btns"
+            android:textColor="#FFFF"
+            android:layout_marginLeft="235dp"
+            android:layout_marginTop="350dp" />
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

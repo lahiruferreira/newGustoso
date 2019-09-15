@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admin_view_complete_delivery"></activity>
+        <activity android:name=".final_review"></activity>
+        <activity android:name=".viewreview" />
+        <activity android:name=".review_summary" />
+        <activity android:name=".admin_view_complete_delivery" />
         <activity android:name=".admin_complete_delivery" />
         <activity android:name=".admin_edit_delivery" />
         <activity android:name=".admin_delivery_summary" />

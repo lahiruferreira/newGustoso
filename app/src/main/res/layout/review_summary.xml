@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".review_summary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/admin_delivery_summary_txt1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:text="Your Review"
+            android:gravity="center|top"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lststepname"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/name"
+            android:layout_marginTop="100dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/customername"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/lststepcountry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/country"
+            android:layout_marginTop="150dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/customercountry"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/lststeprate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/reviewrate"
+            android:layout_marginTop="200dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/customerrate"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="100dp"/>
+
+        <TextView
+            android:id="@+id/lststepreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/review"
+            android:layout_marginTop="250dp"
+            android:textSize="15dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/customerreview"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/edit_text"
+            android:layout_marginTop="250dp"
+            android:layout_marginLeft="100dp"/>
+
+        <Button
+            android:id="@+id/renewReview"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Edit/Delete Your Review"
+            android:background="@drawable/btns"
+            android:textColor="#FFFF"
+            android:onClick="updateReview"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="350dp" />
+
+
+
+    </RelativeLayout>
+</ScrollView>

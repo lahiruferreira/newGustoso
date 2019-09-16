@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
@@ -15,15 +14,15 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class admin_view_employee extends AppCompatActivity {
-    private static final String TAG = "admin_view_employee" ;
+public class admin_view_employe extends AppCompatActivity {
+    private static final String TAG = "admin_view_employe" ;
     GustosoDBHelper mDataBasehelper ;
-    private ListView mListView ;
-
+    private ListView mListView;
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_view_employee);
+        setContentView(R.layout.activity_admin_view_employe);
 
         mListView = (ListView) findViewById(R.id.admin_view_emp_list);
         mDataBasehelper = new GustosoDBHelper(this);
@@ -65,7 +64,7 @@ public class admin_view_employee extends AppCompatActivity {
                 }
                 if (empID > -1){
                     Log.d(TAG, "onItenClick: The EMPID is: " + empID);
-                    Intent editIntent = new Intent(admin_view_employee.this,admin_summary_of_employee.class);
+                    Intent editIntent = new Intent(admin_view_employe.this,admin_summary_employe.class);
                     editIntent.putExtra("empid", empID);
                     editIntent.putExtra("fname", empname);
                     editIntent.putExtra("lname", Lname);
@@ -88,7 +87,7 @@ public class admin_view_employee extends AppCompatActivity {
         startActivity(intent);
     }
     public void employeeSummary(View view) {
-        Intent intent = new Intent(this, admin_summary_of_employee.class);
+        Intent intent = new Intent(this, admin_summary_employe.class);
         startActivity(intent);
     }
 }

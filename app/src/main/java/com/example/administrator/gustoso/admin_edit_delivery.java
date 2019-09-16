@@ -45,6 +45,7 @@ public class admin_edit_delivery extends AppCompatActivity {
         gDataBaseHelper = new GustosoDBHelper(this) ;
 
         Intent receivedIntent = getIntent();
+
         selectedID = receivedIntent.getIntExtra("id", -1);
         selectedName = receivedIntent.getStringExtra("name");
         selectedLocation = receivedIntent.getStringExtra("location");

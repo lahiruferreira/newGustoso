@@ -52,7 +52,7 @@ public class admin_add_employee extends AppCompatActivity {
                 if (validDetails()) {
                     dataAdd(enterNewEmp, Lname, Pnum, Mail, Nic, Date);
                     txtEdit.setText("");
-                    Intent intentMain = new Intent(admin_add_employee.this, admin_view_employee.class);
+                    Intent intentMain = new Intent(admin_add_employee.this, admin_view_employe.class);
                     startActivity(intentMain);
                 }else {
                     //msg

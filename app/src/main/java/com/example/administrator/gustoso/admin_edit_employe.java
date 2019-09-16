@@ -11,7 +11,7 @@ import android.widget.Toast;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class admin_edit_employee extends AppCompatActivity {
+public class admin_edit_employe extends AppCompatActivity {
     private static final String TAG = "admin_edit_employee";
     private Button btnempsave,btnempdelete ;
     private TextView editFname ;
@@ -38,8 +38,7 @@ public class admin_edit_employee extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_edit_employee);
-
+        setContentView(R.layout.activity_admin_edit_employe);
         btnempsave = (Button) findViewById(R.id.admin_empsave);
         btnempdelete = (Button) findViewById(R.id.admin_empdelete);
         editFname = (TextView) findViewById(R.id.admin_empedit_txt7);
@@ -80,7 +79,7 @@ public class admin_edit_employee extends AppCompatActivity {
                 if (validdetails()){
                     mDataBaseHelper.Employeeupdate(fname,sempid,sfname,sllname,sllpnum,sllmail,sllnic,slldate);
                     editFname.setText("");
-                    Intent intent = new Intent(admin_edit_employee.this, admin_view_employee.class);
+                    Intent intent = new Intent(admin_edit_employe.this, admin_view_employe.class);
                     startActivity(intent);
                 }else {
                     //msg
@@ -93,7 +92,7 @@ public class admin_edit_employee extends AppCompatActivity {
                 mDataBaseHelper.NameDelete(sempid,sfname);
                 editFname.setText("");
                 toastmsg("Delete from data base");
-                Intent intent = new Intent(admin_edit_employee.this, admin_view_employee.class);
+                Intent intent = new Intent(admin_edit_employe.this, admin_view_employe.class);
                 startActivity(intent);
 
             }

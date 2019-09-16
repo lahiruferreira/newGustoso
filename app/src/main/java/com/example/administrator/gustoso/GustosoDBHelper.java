@@ -82,13 +82,19 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         db.insert(GustosoDB.userReview.TABLE_NAME,null,contentValues);
         Log.e("DB Operation","Data Inserted");
     }*/
+
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL("DROP TABLE " + TABLE_NAME) ;
+        db.execSQL("DROP TABLE " + TABLE_NAME ) ;
+        onCreate(db);
+    /*
+    public void onUpgrade(SQLiteDatabase db, int i, int i1) {
+        db.execSQL("DROP TABLE " + EMP_TABLE_NAME ) ;
         onCreate(db);
 
-
+     */
     }
+
 
     public Cursor viewData(GustosoDBHelper gustosoDBHelper){
         SQLiteDatabase db = gustosoDBHelper.getReadableDatabase();
@@ -198,16 +204,19 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     }
     public void Employeeupdate(String newfname, int eid, String oldfname, String Lname, String Pnum, String Mail, String Nic, String Date){
         SQLiteDatabase db = this.getWritableDatabase();
-        String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN1 + " = '" + oldfname + "'";
+       // String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN1 + " = '" + oldfname + "'";
+         String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN2 + " = '" + oldfname + "'";
         Log.d(TAG, "updateName: query: " + q) ;
-        Log.d(TAG, "updateName: Setting name to " +newfname);
+        Log.d(TAG, "updateName: Setting name to " + newfname);
         db.execSQL(q);
     }
-    public void NameDelete(int eid, String enterNewEmp){
+
+    public void NameDelete(int eid, String ename){
         SQLiteDatabase db = this.getWritableDatabase();
-        String q = "DELETE FROM " + EMP_TABLE_NAME + " WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN2 + " = '" + enterNewEmp + "'" ;
+        //String q = "DELETE FROM " + EMP_TABLE_NAME + " WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN2 + " = '" + ename + "'" ;
+        String q = "DELETE FROM " + EMP_TABLE_NAME + " WHERE " + COLOUMN2 + " = '" + ename + "'" ;
         Log.d(TAG, "deleteNeme: query: " + q);
-        Log.d(TAG, "deleteName: Deleting " + enterNewEmp + " from database. ");
+        Log.d(TAG, "deleteName: Deleting " + ename + " from database.");
         db.execSQL(q);
     }
 

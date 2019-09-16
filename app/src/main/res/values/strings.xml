@@ -156,7 +156,7 @@
     <string name="admin_s_emp_btn4">Edit Employee</string>
     <string name="admin_empedit_txt1">Edit Employee Details</string>
     <string name="admin_empedit_txt2">First Name</string>
-    <string name="admin_empedit_txt3" >Last Name</string>
+    <string name="admin_empedit_txt3">Last Name</string>
     <string name="admin_empedit_txt4">Phone Number</string>
     <string name="admin_empedit_txt5">E-mail</string>
     <string name="admin_empedit_txt6">NIC</string>

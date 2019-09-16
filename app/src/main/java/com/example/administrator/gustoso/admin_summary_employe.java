@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class admin_summary_of_employee extends AppCompatActivity {
+public class admin_summary_employe extends AppCompatActivity {
     private static final String TAG = "admin_summary_employee";
     private TextView Fname ;
     private TextView Lname ;
@@ -27,12 +27,10 @@ public class admin_summary_of_employee extends AppCompatActivity {
     private String smail ;
     private String snic ;
     private String sdate ;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_summary_of_employee);
-
+        setContentView(R.layout.activity_admin_summary_employe);
         Fname = (TextView) findViewById(R.id.admin_s_emp_txt3) ;
         Lname = (TextView) findViewById(R.id.admin_s_emp_txt5);
         Pnum =(TextView) findViewById(R.id.admin_s_emp_txt7);
@@ -63,7 +61,7 @@ public class admin_summary_of_employee extends AppCompatActivity {
         startActivity(intent);
     }
     public void regesterdemployee(View view){
-        Intent intent = new Intent(this, admin_view_complete_employee.class);
+        Intent intent = new Intent(this, admin_vcomplete_employe.class);
         startActivity(intent);
     }
     public void admindash(View view){
@@ -78,7 +76,7 @@ public class admin_summary_of_employee extends AppCompatActivity {
         }
         if (empID > -1){
             Log.d(TAG, "onempClick: The ID is: " +empID);
-            Intent intent = new Intent(this,admin_edit_employee.class);
+            Intent intent = new Intent(this,admin_edit_employe.class);
             intent.putExtra("empid", empID);
             intent.putExtra("fname", Fname.getText().toString());
             intent.putExtra("lname", slname);

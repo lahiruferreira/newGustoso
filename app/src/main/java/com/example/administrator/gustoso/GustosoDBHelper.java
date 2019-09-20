@@ -285,9 +285,9 @@ Minindu-reg
         Cursor cur = db.rawQuery(stri, null) ;
         return cur ;
     }
-    public Cursor getregId(String enterNewreg) {
+    public Cursor getregId(String uname, String password) {
         SQLiteDatabase db = this.getWritableDatabase();
-        String stri = "SELECT * FROM " + REG_TABLE + " WHERE " + COLOUMN2 + " = '" +enterNewreg+"'" ;
+        String stri = "SELECT * FROM " + REG_TABLE + " WHERE " + COLOUMN_7 + " = '" +uname+"'" + " AND " + COLOUMN_8 + " = '" + password + "'"  ;
         Cursor cur = db.rawQuery(stri, null);
         return cur ;
     }

@@ -16,6 +16,10 @@ import java.util.List;
 
 public class GustosoDBHelper extends SQLiteOpenHelper {
     private static final String TAG = "GustosoDBHelper" ;
+
+    /*
+    Isuri
+     */
     private static final String TABLE_NAME = "adddelivery_table" ;
     private static final String COL1 = "ID" ;
     private static final String COL2 = "name" ;
@@ -23,6 +27,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     private static final String COL4 = "date" ;
     private static final String COL5 = "time" ;
 
+    /*
+    Minindu-EMP
+     */
     private static final String EMP_TABLE_NAME = "employee_table" ;
     private static final String COLOUMN1 = "EID" ;
     private static final String COLOUMN2 = "fname" ;
@@ -31,6 +38,20 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     private static final String COLOUMN5 = "mail" ;
     private static final String COLOUMN6 = "nic" ;
     private static final String COLOUMN7 = "date" ;
+
+    /*
+    Minindu-reg
+     */
+    private static final String REG_TABLE = "register" ;
+    private static final String COLOUMN_1 = "reg_ID" ;
+    private static final String COLOUMN_2 = "f_name" ;
+    private static final String COLOUMN_3 = "c_no" ;
+    private static final String COLOUMN_4 = "e_mail" ;
+    private static final String COLOUMN_5 = "country" ;
+    private static final String COLOUMN_6 = "gender" ;
+    private static final String COLOUMN_7 = "u_name" ;
+    private static final String COLOUMN_8 = "password" ;
+
 
    /* private static final String CREATE_QUERY1 = "CREATE TABLE "+ GustosoDB.userReview.TABLE_NAME+"("+ GustosoDB.userReview.FULL_NAME+" TEXT,"+
             GustosoDB.userReview.CONTACT_NO+" TEXT,"+ GustosoDB.userReview.EMAIL_ADDRESS+" TEXT,"+ GustosoDB.userReview.COUNTRY+" TEXT,"+
@@ -52,12 +73,22 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
 
         db.execSQL(CREATE_QUERY2);
         Log.e("DB Operation","Table created");*/
-
+/*
+isuri
+ */
         String createTable = "CREATE TABLE " + TABLE_NAME + " (ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, " + COL3 + " TEXT, " + COL4 + " TEXT, " + COL5 + " TEXT)" ;
         db.execSQL(createTable) ;
-
+/*
+Minindu-emp
+ */
         String tableCreate = "CREATE TABLE " + EMP_TABLE_NAME + " (EID INTEGER PRIMARY KEY AUTOINCREMENT, " + COLOUMN2 + " TEXT, " + COLOUMN3 + " TEXT, " + COLOUMN4 + " TEXT, " + COLOUMN5 + " TEXT, " + COLOUMN6 + " TEXT, " + COLOUMN7 + " TEXT )" ;
         db.execSQL(tableCreate) ;
+
+/*
+Minindu-reg
+ */
+        String createTableReg = "CREATE TABLE " + REG_TABLE + " (reg_ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COLOUMN_2 + " TEXT, " + COLOUMN_3 + " TEXT, " + COLOUMN_3 + " TEXT, " + COLOUMN_4 + " TEXT, " + COLOUMN_5 + " TEXT, " + COLOUMN_6 + " TEXT, " + COLOUMN_7 + " Text, " + COLOUMN_8 + " TEXT )" ;
+        db.execSQL(createTableReg) ;
     }
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){
         ContentValues contentValues = new ContentValues();
@@ -124,6 +155,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
                 selectionArgs
         );
     }
+    /*
+    isuri
+     */
     public boolean addData (String name, String location, String date, String time) {
         SQLiteDatabase db = this.getWritableDatabase() ;
         ContentValues contentValues = new ContentValues() ;
@@ -171,6 +205,9 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         db.execSQL(query);
 
     }
+    /*
+    Minindu
+     */
     public boolean dataAdd (String enterNewEmp, String Lname, String Pnum, String Mail, String Nic, String Date) {
         SQLiteDatabase db = this.getWritableDatabase() ;
         ContentValues cval = new ContentValues() ;
@@ -219,5 +256,43 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
         Log.d(TAG, "deleteName: Deleting " + ename + " from database.");
         db.execSQL(q);
     }
+    /*
+    Minindu reg
+     */
+    public boolean dataAddToReg (String enterNewname, String cnumber, String eMail, String country, String gen, String uname, String password) {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        ContentValues regval = new ContentValues() ;
+        regval.put(COLOUMN_2, enterNewname) ;
+        regval.put(COLOUMN_3, cnumber) ;
+        regval.put(COLOUMN_4, eMail) ;
+        regval.put(COLOUMN_5, country) ;
+        regval.put(COLOUMN_6, gen) ;
+        regval.put(COLOUMN_7, uname) ;
+        regval.put(COLOUMN_8, password);
+
+        Log.d(TAG, "DataAdd: Added " + enterNewname + " to " + REG_TABLE) ;
+        long r = db.insert(REG_TABLE, null, regval) ;
+
+        if (r == -1 ){
+            return false ;
+        }else {
+            return true ;
+        }
+    }
+    public Cursor getRegData() {
+        SQLiteDatabase db = this.getWritableDatabase() ;
+        String stri = "SELECT * FROM " + REG_TABLE ;
+        Cursor cur = db.rawQuery(stri, null) ;
+        return cur ;
+    }
+    public Cursor getregId(String enterNewreg) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String stri = "SELECT * FROM " + REG_TABLE + " WHERE " + COLOUMN2 + " = '" +enterNewreg+"'" ;
+        Cursor cur = db.rawQuery(stri, null);
+        return cur ;
+    }
+    /*
+    Maneesha
+     */
 
 }

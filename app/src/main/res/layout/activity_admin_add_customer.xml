@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".admin_add_customer">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
 
     <ImageView
@@ -67,9 +70,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/admin_customer_txt4"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt3" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/admin_customer_txt5"
@@ -80,9 +81,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/admin_customer_txt5"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt4" />
+        android:textSize="18sp" />
 
     <TextView
         android:id="@+id/admin_customer_txt6"
@@ -93,9 +92,7 @@
         android:layout_marginTop="16dp"
         android:text="@string/admin_customer_txt6"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt5" />
+        android:textSize="18sp" />
 
     <EditText
         android:id="@+id/admin_customer_txt7"
@@ -108,11 +105,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/admin_customer_txt7"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toEndOf="@+id/admin_customer_txt3"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt8" />
+        android:inputType="textPersonName"/>
 
     <EditText
         android:id="@+id/admin_customer_txt8"
@@ -125,10 +118,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/admin_customer_txt8"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/admin_customer_txt2"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt1" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/admin_customer_txt9"
@@ -141,10 +131,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/admin_customer_txt9"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/admin_customer_txt6"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt11" />
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/admin_customer_txt10"
@@ -157,10 +144,7 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/admin_customer_txt10"
-        android:inputType="phone"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/admin_customer_txt4"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt7" />
+        android:inputType="phone" />
 
     <EditText
         android:id="@+id/admin_customer_txt11"
@@ -173,40 +157,31 @@
         android:layout_marginRight="8dp"
         android:ems="10"
         android:hint="@string/admin_customer_txt11"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/admin_customer_txt5"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt10" />
+        android:inputType="textEmailAddress" />
 
     <Button
         android:id="@+id/admin_cusback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginLeft="72dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="550dp"
         android:background="#FFEA00"
         android:text="Back"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/admin_customer_txt6" />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/admin_cus_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="72dp"
-        android:layout_marginRight="72dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="45dp"
         android:background="#FFEA00"
         android:text="ADD"
         android:textColor="@android:color/black"
         android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/admin_customer_txt9" />
+        android:textStyle="bold" />
+    </RelativeLayout>
 
-
-</android.support.constraint.ConstraintLayout>
+</ScrollView>

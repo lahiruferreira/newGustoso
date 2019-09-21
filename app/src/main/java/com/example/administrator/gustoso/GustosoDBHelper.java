@@ -42,15 +42,15 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     /*
     Minindu-reg
      */
-    private static final String REG_TABLE = "register" ;
-    private static final String COLOUMN_1 = "reg_ID" ;
-    private static final String COLOUMN_2 = "f_name" ;
-    private static final String COLOUMN_3 = "c_no" ;
-    private static final String COLOUMN_4 = "e_mail" ;
-    private static final String COLOUMN_5 = "country" ;
-    private static final String COLOUMN_6 = "gender" ;
-    private static final String COLOUMN_7 = "u_name" ;
-    private static final String COLOUMN_8 = "password" ;
+    public static final String REG_TABLE = "register" ;
+    public static final String COLOUMN_1 = "reg_ID" ;
+    public static final String COLOUMN_2 = "f_name" ;
+    public static final String COLOUMN_3 = "c_no" ;
+    public static final String COLOUMN_4 = "e_mail" ;
+    public static final String COLOUMN_5 = "country" ;
+    public static final String COLOUMN_6 = "gender" ;
+    public static final String COLOUMN_7 = "u_name" ;
+    public static final String COLOUMN_8 = "password" ;
 
 
    /* private static final String CREATE_QUERY1 = "CREATE TABLE "+ GustosoDB.userReview.TABLE_NAME+"("+ GustosoDB.userReview.FULL_NAME+" TEXT,"+
@@ -116,7 +116,7 @@ Minindu-reg
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-        db.execSQL("DROP TABLE " + TABLE_NAME ) ;
+        db.execSQL("DROP TABLE " + TABLE_NAME ) ;//drop older table is exists
         onCreate(db);
     /*
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
@@ -259,38 +259,7 @@ Minindu-reg
     /*
     Minindu reg
      */
-    public boolean dataAddToReg (String enterNewname, String cnumber, String eMail, String country, String gen, String uname, String password) {
-        SQLiteDatabase db = this.getWritableDatabase() ;
-        ContentValues regval = new ContentValues() ;
-        regval.put(COLOUMN_2, enterNewname) ;
-        regval.put(COLOUMN_3, cnumber) ;
-        regval.put(COLOUMN_4, eMail) ;
-        regval.put(COLOUMN_5, country) ;
-        regval.put(COLOUMN_6, gen) ;
-        regval.put(COLOUMN_7, uname) ;
-        regval.put(COLOUMN_8, password);
 
-        Log.d(TAG, "DataAdd: Added " + enterNewname + " to " + REG_TABLE) ;
-        long r = db.insert(REG_TABLE, null, regval) ;
-
-        if (r == -1 ){
-            return false ;
-        }else {
-            return true ;
-        }
-    }
-    public Cursor getRegData() {
-        SQLiteDatabase db = this.getWritableDatabase() ;
-        String stri = "SELECT * FROM " + REG_TABLE ;
-        Cursor cur = db.rawQuery(stri, null) ;
-        return cur ;
-    }
-    public Cursor getregId(String uname, String password) {
-        SQLiteDatabase db = this.getWritableDatabase();
-        String stri = "SELECT * FROM " + REG_TABLE + " WHERE " + COLOUMN_7 + " = '" +uname+"'" + " AND " + COLOUMN_8 + " = '" + password + "'"  ;
-        Cursor cur = db.rawQuery(stri, null);
-        return cur ;
-    }
     /*
     Maneesha
      */

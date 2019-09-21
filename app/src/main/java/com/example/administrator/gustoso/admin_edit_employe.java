@@ -79,7 +79,7 @@ public class admin_edit_employe extends AppCompatActivity {
                 if (validdetails()){
                     mDataBaseHelper.Employeeupdate(fname,sempid,sfname,sllname,sllpnum,sllmail,sllnic,slldate);
                     editFname.setText("");
-                    Intent intent = new Intent(admin_edit_employe.this, admin_view_employe.class);
+                    Intent intent = new Intent(admin_edit_employe.this, admin_view_employee.class);
                     startActivity(intent);
                 }else {
                     //msg
@@ -92,7 +92,7 @@ public class admin_edit_employe extends AppCompatActivity {
                 mDataBaseHelper.NameDelete(sempid,sfname);
                 editFname.setText("");
                 toastmsg("Delete from data base");
-                Intent intent = new Intent(admin_edit_employe.this, admin_view_employe.class);
+                Intent intent = new Intent(admin_edit_employe.this, admin_view_employee.class);
                 startActivity(intent);
 
             }

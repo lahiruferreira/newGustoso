@@ -13,22 +13,24 @@ import android.widget.Toast;
 
 public class signup extends AppCompatActivity {
     //GustosoDBHelper sDATABASEHELPER ;
-    SQLiteOpenHelper openHelper;
+   /* SQLiteOpenHelper openHelper;
     SQLiteDatabase db;
-
+*/
     private Button btn;
-    private EditText name;
+
+  /*  private EditText name;
     private EditText cnumber;
     private EditText email;
     private EditText country;
     private EditText gender;
     private EditText username;
     private EditText password;
+    */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.signup);
-        openHelper = new GustosoDBHelper(this);
+      /*  openHelper = new GustosoDBHelper(this);
         btn = (Button) findViewById(R.id.btnconfirm);
         name = (EditText) findViewById(R.id.hintname);
         cnumber = (EditText) findViewById(R.id.hintphone);
@@ -38,11 +40,11 @@ public class signup extends AppCompatActivity {
         username = (EditText) findViewById(R.id.hintuser);
         password = (EditText) findViewById(R.id.hintpassword);
        // sDATABASEHELPER = new GustosoDBHelper(this);
-
+*/
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                db=openHelper.getWritableDatabase();
+                /*db=openHelper.getWritableDatabase();
 
                 String rname = name.getText().toString();
                 String rcnumber = cnumber.getText().toString();
@@ -53,12 +55,13 @@ public class signup extends AppCompatActivity {
                 String rpassword = password.getText().toString();
                 insertdatareg(rname,rcnumber,remail,rcountry,rgender,runame,rpassword);
                 Toast.makeText(getApplicationContext(),"Register successfully",Toast.LENGTH_LONG).show();
-
+*/
                 Intent intent = new Intent(signup.this, Login.class);
                 startActivity(intent);
             }
         });
     }
+    /*
     public void insertdatareg(String rname, String rcnumber, String remail, String rcountry,String rgender,String runame, String rpassword){
         ContentValues cregval = new ContentValues();
         cregval.put(GustosoDBHelper.COLOUMN_2,rname);
@@ -70,5 +73,5 @@ public class signup extends AppCompatActivity {
         cregval.put(GustosoDBHelper.COLOUMN_7,rpassword);
         long id = db.insert(GustosoDBHelper.REG_TABLE,null, cregval);
 
-    }
+    }*/
 }

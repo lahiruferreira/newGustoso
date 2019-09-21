@@ -14,7 +14,7 @@ public class admin_dashboard extends AppCompatActivity {
     Button admi_btn4;
     Button admi_btn5;
     Button admi_btn6;
-    Button btn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,6 @@ public class admin_dashboard extends AppCompatActivity {
         admi_btn4 = findViewById(R.id.admin_btn4);
         admi_btn5 = findViewById(R.id.admin_btn5);
         admi_btn6 = findViewById(R.id.admin_btn6);
-        btn = findViewById(R.id.buttonextra);
     }
 
     @Override
@@ -40,6 +39,7 @@ public class admin_dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         admi_btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,24 +61,19 @@ public class admin_dashboard extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         admi_btn5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(admin_dashboard.this,admin_add_customer.class);
+                Intent intent = new Intent(admin_dashboard.this,Orderfood.class);
                 startActivity(intent);
             }
         });
+
         admi_btn6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(admin_dashboard.this,admin_view_employe.class);
-                startActivity(intent);
-            }
-        });
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(admin_dashboard.this,Orderfood.class);
+                Intent intent = new Intent(admin_dashboard.this,admin_view_employee.class);
                 startActivity(intent);
             }
         });

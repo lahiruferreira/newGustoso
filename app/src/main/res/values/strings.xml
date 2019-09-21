@@ -53,8 +53,8 @@
     <string name="admin_btn2">View Delivery</string>
     <string name="admin_btn3">Add Employee</string>
     <string name="admin_btn4">View foods</string>
-    <string name="admin_btn5">Add customer</string>
-    <string name="admin_btn6">View Customer</string>
+    <string name="admin_btn5">Add food</string>
+    <string name="admin_btn6">View Employee</string>
     <string name="admin_food_txt1">Viwe Food Details</string>
     <string name="admin_view_dili_txt1">View Delivery Details</string>
     <string name="order_submit">SUBMIT</string>
@@ -128,7 +128,7 @@
     <string name="admin_delivery_summary_txt2">Name</string>
     <string name="admin_delivery_summary_txt4">Location</string>
     <string name="admin_delivery_summary_txt6">Date/Time</string>
-    <string name="admin_delivery_summary_btn1">Customer List</string>
+    <string name="admin_delivery_summary_btn1">Home</string>
     <string name="admin_delivery_summary_btn2">Complete Delivery</string>
     <string name="admin_delivery_summary_btn3">Order List</string>
     <string name="admin_delivery_summary_btn4">Edit Delivery</string>

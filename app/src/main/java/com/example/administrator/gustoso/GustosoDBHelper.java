@@ -41,7 +41,7 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
 
     /*
     Minindu-reg
-     */
+
     public static final String REG_TABLE = "register" ;
     public static final String COLOUMN_1 = "reg_ID" ;
     public static final String COLOUMN_2 = "f_name" ;
@@ -51,7 +51,7 @@ public class GustosoDBHelper extends SQLiteOpenHelper {
     public static final String COLOUMN_6 = "gender" ;
     public static final String COLOUMN_7 = "u_name" ;
     public static final String COLOUMN_8 = "password" ;
-
+*/
 
    /* private static final String CREATE_QUERY1 = "CREATE TABLE "+ GustosoDB.userReview.TABLE_NAME+"("+ GustosoDB.userReview.FULL_NAME+" TEXT,"+
             GustosoDB.userReview.CONTACT_NO+" TEXT,"+ GustosoDB.userReview.EMAIL_ADDRESS+" TEXT,"+ GustosoDB.userReview.COUNTRY+" TEXT,"+
@@ -86,9 +86,10 @@ Minindu-emp
 
 /*
 Minindu-reg
- */
+
         String createTableReg = "CREATE TABLE " + REG_TABLE + " (reg_ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COLOUMN_2 + " TEXT, " + COLOUMN_3 + " TEXT, " + COLOUMN_3 + " TEXT, " + COLOUMN_4 + " TEXT, " + COLOUMN_5 + " TEXT, " + COLOUMN_6 + " TEXT, " + COLOUMN_7 + " Text, " + COLOUMN_8 + " TEXT )" ;
         db.execSQL(createTableReg) ;
+        */
     }
     public void addInfor(String fullname,String contact,String email,String country,String review,String reviewRate,SQLiteDatabase db){
         ContentValues contentValues = new ContentValues();
@@ -241,7 +242,7 @@ Minindu-reg
     }
     public void Employeeupdate(String newfname, int eid, String oldfname, String Lname, String Pnum, String Mail, String Nic, String Date){
         SQLiteDatabase db = this.getWritableDatabase();
-       // String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN1 + " = '" + oldfname + "'";
+       //String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN1 + " = '" + eid + "'" + " AND " + COLOUMN1 + " = '" + oldfname + "'";
          String q = "UPDATE " + EMP_TABLE_NAME + " SET " + COLOUMN2 + " = '" + newfname + "', " + COLOUMN3 + " = '" + Lname + "', " + COLOUMN4 + " = '" + Pnum + "', " + COLOUMN5 + " = '" + Mail + "', " + COLOUMN6 + " = '" + Nic + "', " + COLOUMN7 + " = '" + Date + "' WHERE " + COLOUMN2 + " = '" + oldfname + "'";
         Log.d(TAG, "updateName: query: " + q) ;
         Log.d(TAG, "updateName: Setting name to " + newfname);

@@ -9,11 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".admin_comple_employee"></activity>
+        <activity android:name=".admin_view_employee" />
+        <activity android:name=".admin_comple_employee" />
         <activity android:name=".admin_edit_employe" />
         <activity android:name=".admin_summary_employe" />
         <activity android:name=".admin_vcomplete_employe" />
-        <activity android:name=".admin_view_employe" />
         <activity android:name=".final_review" />
         <activity android:name=".viewreview" />
         <activity android:name=".review_summary" />
@@ -24,8 +24,6 @@
         <activity android:name=".Beverages" />
         <activity android:name=".Noodles" />
         <activity android:name=".Koththu" />
-        <activity android:name=".admin_view_customer" />
-        <activity android:name=".admin_add_customer" />
         <activity android:name=".Orderfood" />
         <activity android:name=".admin_add_employee" />
         <activity android:name=".admin_view_food" />

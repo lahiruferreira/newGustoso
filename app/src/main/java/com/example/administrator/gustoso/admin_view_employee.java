@@ -14,15 +14,16 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class admin_view_employe extends AppCompatActivity {
+public class admin_view_employee extends AppCompatActivity {
+
     private static final String TAG = "admin_view_employe" ;
     GustosoDBHelper mDataBasehelper ;
     private ListView mListView;
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_view_employe);
+        setContentView(R.layout.activity_admin_view_employee);
 
         mListView = (ListView) findViewById(R.id.admin_view_emp_list);
         mDataBasehelper = new GustosoDBHelper(this);
@@ -64,7 +65,7 @@ public class admin_view_employe extends AppCompatActivity {
                 }
                 if (empID > -1){
                     Log.d(TAG, "onItenClick: The EMPID is: " + empID);
-                    Intent editIntent = new Intent(admin_view_employe.this,admin_summary_employe.class);
+                    Intent editIntent = new Intent(admin_view_employee.this,admin_summary_employe.class);
                     editIntent.putExtra("empid", empID);
                     editIntent.putExtra("fname", empname);
                     editIntent.putExtra("lname", Lname);

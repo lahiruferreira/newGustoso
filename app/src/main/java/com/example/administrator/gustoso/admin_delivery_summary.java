@@ -48,10 +48,12 @@ public class  admin_delivery_summary extends AppCompatActivity {
         date.setText(selectedDate);
         time.setText(selectedTime);
     }
-    public void openCustomerList(View view){
-        Intent intent = new Intent(this, admin_view_customer.class);
+
+    public void openHome(View view){
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
     public void openCompleteDelivery(View view){
         Intent intent = new Intent(this, admin_view_complete_delivery.class);
         startActivity(intent);

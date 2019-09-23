@@ -169,5 +169,9 @@
     <string name="admin_empedit_txt13">DD/MM/YYYY</string>
     <string name="admin_empsave">Save</string>
     <string name="admin_empdelete">Delete</string>
-
+    <string name="menu_ourmenu">Our Menu</string>
+    <string name="menu_fried">Fried Rice</string>
+    <string name="menu_koththtu">Koththu</string>
+    <string name="menu_headFried">Fried Rice Varieties</string>
+    <string name="menu_beverage">Bevarages</string>
 </resources>

@@ -8,13 +8,15 @@
 
     <TextView
         android:id="@+id/FriedRiceList_txt1"
-        android:layout_width="290dp"
+        android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_marginEnd="8dp"
+        android:textColor="#000000"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="fried"
-        android:textSize="36sp"
+        android:gravity="center"
+        android:text="@string/menu_headFried"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.849"
@@ -40,7 +42,7 @@
         app:layout_constraintVertical_bias="0.218"
         app:srcCompat="@drawable/imgfried" />
 
-    <Button
+    <TextView
         android:id="@+id/FriedRiceList_btn1"
         android:layout_width="278dp"
         android:layout_height="52dp"
@@ -49,8 +51,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/admin_diliback"
-        android:text="fried"
+        android:text="Chicken Fried Rice"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -75,9 +77,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.704"
-        app:srcCompat="@drawable/koththu" />
+        app:srcCompat="@drawable/seafood" />
 
-    <Button
+    <TextView
         android:id="@+id/FriedRiceList_btn2"
         android:layout_width="278dp"
         android:layout_height="52dp"
@@ -87,8 +89,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/admin_diliback"
-        android:text="fried"
+        android:text="Sea Food Fied Rice"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,14 +101,17 @@
 
     <Button
         android:id="@+id/FriedRiceList_btn3"
-        android:layout_width="336dp"
-        android:layout_height="56dp"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="fried"
+        android:background="@drawable/btns"
+        android:textSize="8pt"
+        android:textColor="#FFFF"
+        android:text="Order Now"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.491"

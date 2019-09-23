@@ -94,23 +94,6 @@
             android:textSize="5pt"
             android:text="http://www.gustoso.com"/>
 
-        <TextView
-            android:id="@+id/instalink"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="865dp"
-            android:layout_marginLeft="130dp"
-            android:textSize="5pt"
-            android:text="http://www.instagram.com/gustoso"/>
-
-        <TextView
-            android:id="@+id/fblink"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="895dp"
-            android:textSize="5pt"
-            android:layout_marginLeft="130dp"
-            android:text="http://www.facebook.com/gustoso"/>
 
         <Button
             android:id="@+id/reviewus"

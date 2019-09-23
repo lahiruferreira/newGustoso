@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".viewreview">
+    tools:context=".viewreview"
+    android:background="@drawable/imgblack">
     <TextView
         android:id="@+id/cusreviews"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Customer Reviews"
+        android:text="Customer Name"
         android:layout_marginTop="30dp"
-        android:textSize="14pt"
+        android:textSize="10pt"
+        android:textColor="#000000"
         android:gravity="center|top"/>
     <ListView
         android:layout_marginTop="150dp"

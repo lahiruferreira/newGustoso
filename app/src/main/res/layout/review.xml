@@ -10,15 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btnback"
-            android:layout_width="60dp"
-            android:layout_height="30dp"
-            android:text="@string/backHome"
-            android:textSize="7dp"
-            android:background="@drawable/btns"
-            android:textColor="#FFFF"/>
-
         <ImageView
             android:id="@+id/topImage"
             android:layout_width="match_parent"

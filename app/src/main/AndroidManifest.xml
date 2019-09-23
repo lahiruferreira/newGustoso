@@ -14,9 +14,12 @@
         <activity android:name=".admin_edit_employe" />
         <activity android:name=".admin_summary_employe" />
         <activity android:name=".admin_vcomplete_employe" />
-        <activity android:name=".final_review" />
-        <activity android:name=".viewreview" />
-        <activity android:name=".review_summary" />
+        <activity android:name=".final_review"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".viewreview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".review_summary"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".admin_view_complete_delivery" />
         <activity android:name=".admin_complete_delivery" />
         <activity android:name=".admin_edit_delivery" />

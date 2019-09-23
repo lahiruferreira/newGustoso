@@ -47,11 +47,9 @@ public class ContactFragment extends Fragment {
                 String email = Email.getText().toString();
                 String country = Country.getText().toString();
                 String question = Question.getText().toString();
-                gustosoDBHelper = new GustosoDBHelper2(context);
-                sqLiteDatabase = gustosoDBHelper.getWritableDatabase();
-                gustosoDBHelper.addContact(name,cont,email,country,question,sqLiteDatabase);
                 Toast.makeText(getActivity(),"Succesfull",Toast.LENGTH_LONG).show();
-                gustosoDBHelper.close();
+
+
             }
         });
         return v;
